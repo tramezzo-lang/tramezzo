@@ -60,6 +60,10 @@ def parse_primary():
         advance()
         return ("FALSO",)
 
+    if token == "NULLA":
+        advance()
+        return ("NULLA", None)
+
     if token == "LISTA":
         return parse_list()
 
@@ -83,7 +87,7 @@ def parse_primary():
 def parse_factor():
     left = parse_access()
 
-    while current() in ("PER", "DIVISO"):
+    while current() in ("PER", "POTENZA", "DIVISO", "MODULO"):
         operator = advance()
         right = parse_access()
 
@@ -149,6 +153,9 @@ def parse_list():
     elements = []
 
     elements.append(parse_expression())
+
+    if elements[0][1] == None:
+        return ("LISTA", None)
 
     while current() == "VIRGOLA":
         advance()
