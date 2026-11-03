@@ -52,6 +52,8 @@ def tokenize(line):
                 tokens.append("VERO")
             elif result == "falso":
                 tokens.append("FALSO")
+            elif result == "nulla":
+                tokens.append("NULLA")
             else:
                 tokens.append(("IDENTIFICATORE", result))
 
@@ -120,6 +122,10 @@ def tokenize(line):
             tokens.append("PER")
         elif line[i] == '/':
             tokens.append("DIVISO")
+        elif line[i] == '%':
+            tokens.append("MODULO")
+        elif line[i] == '^':
+            tokens.append("POTENZA")
         elif line[i] == '(':
             tokens.append("PARENTESI_S")
         elif line[i] == ')':
