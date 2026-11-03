@@ -51,7 +51,20 @@ stampa 0 da numeri
 ```text
 stampa lunghezza numeri
 ```
+#### Matrice
 
+a seguire è la sintassi per implementare le matrici.
+```text
+sia x = lista con (lista con 1,2,3), (lista con 4,5,6), (lista con 7,8,9)
+
+sia riga = 1 da x
+stampa 1 da riga # stampa 5
+
+# oppure
+
+sia num = 1 da (1 da x)
+stampa num # stampa 5
+```
 
 ### Cicli
 
@@ -97,14 +110,14 @@ stampa nome
 
 ### Commenti
 
-per aggiungere commenti al codice basta aggiungere un `#`
+per aggiungere commenti al codice basta aggiungere un `#`.
 
 ```text
 se x % 2 == 0 allora # x è pari
     stampa "maggiore di 5"
 ```
 
-commenti multilinee si aprono con `#-` e chiudono con `-#`
+commenti multilinee si aprono con `#-` e chiudono con `-#`.
 
 ```text
 #-
