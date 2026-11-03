@@ -90,7 +90,17 @@ Utilizza `inserisci` per ricevere dati dall'utente.
 
 ```text
 stampa "Come ti chiami?"
-sia nome = inserisci
+sia nome = inserisci "io mi chiamo: "
 
 stampa nome
+```
+
+### commenti
+
+per aggiungere i commenti al codice basta un `#`
+
+```text
+se x%2==0 allora # x è pari
+stampa "maggiore di 5"
+
 ```
