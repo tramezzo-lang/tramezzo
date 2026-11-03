@@ -70,6 +70,8 @@ def evaluate(node, functions):
         return len(evaluate(node[1], functions))
 
     elif tipo == "LISTA":
+        if node[1] == None:
+            return []
         return [evaluate(element, functions) for element in node[1]]
 
     elif tipo == "ACCESS":
@@ -149,6 +151,12 @@ def evaluate(node, functions):
 
         elif operator == "DIVISO":
             return left / right
+
+        elif operator == "MODULO":
+            return left % right
+
+        elif operator == "POTENZA":
+            return left ** right
 
         elif operator == "MAGGIORE":
             return left > right
