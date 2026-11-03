@@ -95,9 +95,9 @@ sia nome = inserisci "io mi chiamo: "
 stampa nome
 ```
 
-### commenti
+### Commenti
 
-per aggiungere i commenti al codice basta un `#`
+per aggiungere commenti al codice basta aggiungere un `#`
 
 ```text
 se x%2==0 allora # x è pari
