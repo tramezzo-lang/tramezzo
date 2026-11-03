@@ -41,6 +41,11 @@ Le liste vengono create utilizzando `lista con`.
 sia numeri = lista con 1, 2, 3, 4, 5
 ```
 
+Si può creare una lista vuota utilizzando la parola chiave `nulla`.
+```text
+sia lista_vuota = lista con nulla
+```
+
 È possibile accedere ai singoli elementi utilizzando `da`.
 
 ```text
