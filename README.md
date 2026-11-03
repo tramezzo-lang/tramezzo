@@ -100,7 +100,19 @@ stampa nome
 per aggiungere commenti al codice basta aggiungere un `#`
 
 ```text
-se x%2==0 allora # x è pari
-stampa "maggiore di 5"
+se x % 2 == 0 allora # x è pari
+    stampa "maggiore di 5"
+```
 
+commenti multilinee si aprono con `#-` e chiudono con `-#`
+
+```text
+#-
+lista non deve contenere 0
+0, 1, 2
+3, 4, 5
+-#
+perogniqualvolta numero in lista allora
+    se lista con numero == 0 allora
+    lista con numero += 1
 ```
